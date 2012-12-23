@@ -13,3 +13,11 @@ test:
   password:
   pool: 5
   timeout: 5000
+
+production:
+  adapter: postgresql
+  database: ENV['db']
+  username: ENV['db_username']
+  password: ENV['db_password']
+  pool: 5
+  timeout: 5000
