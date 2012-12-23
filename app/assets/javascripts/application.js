@@ -17,3 +17,15 @@
 // 3rd party libs - required from /vendor --
 //= require underscore
 //= require bootstrap
+//= require bootstrap-typeahead
+//= require bootstrap-carousel
+//= require bootstrap-collapse
+//= require bootstrap-button
+//= require bootstrap-popover
+//= require bootstrap-tooltip
+//= require bootstrap-tab
+//= require bootstrap-scrollspy
+//= require bootstrap-dropdown
+//= require bootstrap-modal
+//= require bootstrap-alert
+//= require bootstrap-transition
