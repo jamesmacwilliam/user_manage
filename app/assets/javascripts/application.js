@@ -13,3 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+// 3rd party libs - required from /vendor --
+//= require underscore
+//= require bootstrap
