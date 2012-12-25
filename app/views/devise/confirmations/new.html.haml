@@ -1,0 +1,10 @@
+- content_for :hero do
+  %h2 Resend confirmation instructions
+
+  = simple_form_for(resource, as: resource_name, url: confirmation_path(resource_name),
+    html: { method: :post, class: 'form-vertical' }) do |f|
+    = f.error_notification
+    = f.input :email, autofocus: true, required: true
+    = f.button :submit, 'Sign in', class: 'btn-primary'
+
+  = render 'devise/shared/links'

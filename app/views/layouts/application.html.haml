@@ -3,37 +3,19 @@
   %head
     %title CheapEats
     %meta{name: 'viewport', content: 'width=device-width, initial-scale=1.0'}
+    %meta{name: 'description', content: 'some description here'}
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
+    = yield :head
   %body
-    .navbar.navbar-inverse.navbar-fixed-top
-      .navbar-inner
-        .container
-          %a.btn.btn-navbar{'data-toggle' => 'collapse',
-            'data-target' => '.nav-collapse'}
-            %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
-          %a.brand{href: '#'} Cheap Eats
-          .nav-collapse.collapse{style: 'height: 0px;'}
-            %ul.nav
-              %li.active
-                %a{href: '#'} Home
-              %li
-                %a{href: '#about'} About
-              %li
-                %a{href: '#contact'} Contact
+    = render partial: 'layouts/navigation'
+    = render partial: 'layouts/messages'
 
     .container
-      %p.notice= notice
-      %p.alert= alert
       .hero-unit
-        %br
-        %h1 Hungry?
-        %h4 some more text
-      %p some test text
-      %p.btn.btn-primary.btn-large Learn More
+        = yield :hero
+
       = yield
 
     %footer

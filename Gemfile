@@ -17,11 +17,19 @@ gem 'jquery-rails'
 gem 'activeadmin'#, git: 'https://github.com/gregbell/active_admin.git'
 gem 'ranked-model'
 gem 'launchy'
+gem 'rolify'
+gem 'simple_form'
+gem 'quiet_assets'
+gem 'figaro'
+gem 'better_errors'
+gem 'binding_of_caller'
 
 group :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'database_cleaner'
+  gem 'email_spec'
+  gem 'factory_girl_rails'
 end
 
 # To use ActiveModel has_secure_password
