@@ -16,6 +16,7 @@ test:
 
 production:
   adapter: postgresql
+  port: <% ENV['db_port'] %>
   host: <% ENV['db_host'] %>
   database: <% ENV['db'] %>
   username: <% ENV['db_username'] %>
