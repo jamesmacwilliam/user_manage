@@ -71,6 +71,12 @@ ActiveRecord::Schema.define(:version => 20121231224955) do
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.string   "name"
+    t.string   "first_name"
+    t.string   "middle_name"
+    t.string   "last_name"
+    t.string   "cell_phone"
+    t.string   "home_phone"
+    t.string   "work_phone"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
