@@ -7,6 +7,9 @@
     = display_base_errors resource
     = f.input :name, autofocus: true
     = f.input :email, required: true
+    = f.input :cell_phone
+    = f.input :work_phone
+    = f.input :home_phone
     = f.input :password, required: true
     = f.input :password_confirmation, required: true
     = f.button :submit, 'Sign up', class: 'btn-primary'

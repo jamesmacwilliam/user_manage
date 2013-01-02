@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.6'
-gem 'activerecord-postgresql-adapter'
-gem 'mysql2', '0.3.10'
+gem 'pg'
 
 
 group :assets do
@@ -33,6 +32,7 @@ group :test do
   gem 'database_cleaner'
   gem 'email_spec'
   gem 'factory_girl_rails'
+  gem 'faker'
 end
 
 # To use ActiveModel has_secure_password
