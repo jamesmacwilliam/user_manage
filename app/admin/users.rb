@@ -5,16 +5,13 @@ ActiveAdmin.register User do
     column :email, :sortable => :email do |user|
       link_to user.email, admin_user_path(user)
     end
-    column :address, :sortable => false
-    column :is_business, :sortable => :is_business do |user|
-      user.is_business? ? 'true' : false
-    end
+    column :name, :sortable => false
   end
 
   show do
     h3 user.email
     div do
-      simple_format [user.first_name, user.middle_name, user.last_name].join(' ')
+      simple_format [user.name]
     end
     div do
       simple_format ["Created at", user.created_at.to_s(:long)].join(': ')
@@ -31,22 +28,19 @@ ActiveAdmin.register User do
     div do
       simple_format ["Work Phone", user.work_phone].join(': ')
     end
+  end
 
-   table_for(user.profile_preferences) do
-      column "Question" do |pref|
-        pref.name
-      end
-      column "Answer" do |pref|
-        user.profile_preferences.include?(pref).to_s
-      end
+  index do
+    column :name
+    column :email
+    column "Actions" do |q|
+      link_to 'Show', admin_user_path(q)
     end
   end
 
   form do |f|
     f.inputs "Details" do
-      f.input :first_name
-      f.input :middle_name
-      f.input :last_name
+      f.input :name
       f.input :email
       f.input :cell_phone
       f.input :work_phone
