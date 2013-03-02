@@ -25,6 +25,7 @@ gem 'better_errors'
 gem 'binding_of_caller'
 gem 'omniauth-facebook'
 gem 'jruby-openssl', :platform => :jruby
+gem 'ember-rails'
 
 group :test do
   gem 'rspec-rails'
