@@ -1,6 +1,6 @@
 development:
   adapter: postgresql
-  database: cheap_eats
+  database: user_manage
   username: jmacwilliam
   password:
   pool: 5
@@ -8,7 +8,7 @@ development:
 
 test:
   adapter: postgresql
-  database: cheap_eats_test
+  database: user_manage_test
   username: jmacwilliam
   password:
   pool: 5
