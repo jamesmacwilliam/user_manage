@@ -1,3 +1,3 @@
-CheapEats.ApplicationRoute = Ember.Route.extend({
+UserManage.ApplicationRoute = Ember.Route.extend({
 
 });

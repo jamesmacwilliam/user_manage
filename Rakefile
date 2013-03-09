@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-CheapEats::Application.load_tasks
+UserManage::Application.load_tasks

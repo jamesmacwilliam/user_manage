@@ -1,3 +1,3 @@
-CheapEats.ApplicationController = Ember.Controller.extend({
+UserManage.ApplicationController = Ember.Controller.extend({
 
 });

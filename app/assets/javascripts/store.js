@@ -1,3 +1,3 @@
-CheapEats.Store = DS.Store.extend({
+UserManage.Store = DS.Store.extend({
   revision: 11
 });

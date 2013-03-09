@@ -1,2 +1,2 @@
-CheapEats.ApplicationView = Ember.View.extend({
+UserManage.ApplicationView = Ember.View.extend({
 });

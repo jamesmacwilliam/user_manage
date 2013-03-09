@@ -1,3 +1,3 @@
-CheapEats.Router.map(function() {
+UserManage.Router.map(function() {
 
 });
