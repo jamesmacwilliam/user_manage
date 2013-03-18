@@ -1,0 +1,24 @@
+#users_index
+  %form#edit_user{style: 'display:none;'}
+    %fieldset
+      %input{data: {edit: 'id'}, type: 'hidden'}
+      %input{data: {edit: 'user_name'}, type: 'text', placeholder: 'username...'}
+      %input{data: {edit: 'email'}, type: 'text', placeholder: 'email...'}
+      %input{data: {edit: 'first_name'}, type: 'text', placeholder: 'first name...'}
+      %input{data: {edit: 'last_name'}, type: 'text', placeholder: 'last name...'}
+      %input{data: {edit: 'role_names'}, type: 'text', placeholder: 'roles separated by a comma'}
+    %button.btn.btn-primary{type: 'submit'} Submit
+  %table.table.table-bordered.table-striped.table-hover.data-table
+    %thead.sorting
+      %th.sorting{data: {item: 'id', direction: ''}}
+        id
+      %th.sorting{data: {item: 'user_name', direction: ''}}
+        user name
+      %th.sorting{data: {item: 'email', direction: ''}}
+        email
+      %th.sorting{data: {item: 'first_name', direction: ''}}
+        first name
+      %th.sorting{data: {item: 'last_name', direction: ''}}
+        last name
+    %tbody
+  #table_footer

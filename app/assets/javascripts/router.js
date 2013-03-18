@@ -1,3 +1,0 @@
-UserManage.Router.map(function() {
-
-});

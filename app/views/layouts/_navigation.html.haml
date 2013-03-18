@@ -12,9 +12,7 @@
           %li.active
             %a{href: '/'} Home
           %li
-            %a{href: '#about'} About
-          %li
-            %a{href: '#contact'} Contact
+            %a{href: '/users'} Manage Users
           %li
             - if user_signed_in?
               =link_to 'Logout', destroy_user_session_path, method: 'delete'

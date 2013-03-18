@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.6'
-gem 'pg'
+#gem 'pg'
+gem 'mysql2', '0.3.11'
 
 
 group :assets do
@@ -10,11 +11,11 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'haml'
+gem 'haml_assets'
+gem 'hamlbars'
 gem 'devise'
 gem 'cancan'
 gem 'jquery-rails'
-gem 'activeadmin'#, git: 'https://github.com/gregbell/active_admin.git'
 gem 'ranked-model'
 gem 'launchy'
 gem 'rolify'
@@ -23,9 +24,14 @@ gem 'quiet_assets'
 gem 'figaro'
 gem 'better_errors'
 gem 'binding_of_caller'
-gem 'omniauth-facebook'
 gem 'jruby-openssl', :platform => :jruby
 gem 'ember-rails'
+gem 'thin'
+gem 'therubyracer'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
+gem 'rails-backbone'
+gem 'will_paginate'
 
 group :test do
   gem 'rspec-rails'

@@ -1,0 +1,8 @@
+- content_for :hero do
+  %h1 Manage Users
+- if @users
+  :javascript
+    um.users = new um.UsersCollection;
+    um.users.reset(#{@users.to_json});
+    um.total_pages = #{@users.total_pages};
+    um.router = new um.UsersRouter;

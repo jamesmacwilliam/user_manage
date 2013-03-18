@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title UserManage
+    %title User Manage
     %meta{name: 'viewport', content: 'width=device-width, initial-scale=1.0'}
     %meta{name: 'description', content: 'some description here'}
     = stylesheet_link_tag    "application", :media => "all"
@@ -11,12 +11,8 @@
   %body
     = render partial: 'layouts/navigation'
     = render partial: 'layouts/messages'
-
     .container
       .hero-unit
         = yield :hero
-
-      = yield
-
-    %footer
-      %p a footer here
+      #application
+        = yield
